@@ -11,6 +11,7 @@ export const Layout = (props: PropsWithChildren<{title: string}>) => {
         <title safe>{props.title ?? 'Document'}</title>
         <link rel="stylesheet" href="/style.css" />
         <script src="/htmx.min.js"></script>
+        <script src="/htmx-ext-ws.js"></script>
       </head>
       <body>
         {props.children} 
